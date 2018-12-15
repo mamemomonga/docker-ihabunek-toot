@@ -4,6 +4,11 @@
 * https://toot.readthedocs.io/en/latest/
 * https://hub.docker.com/r/mamemomonga/ihabunek-toot
 
+# Requirements
+
+* Docker
+* Bash
+
 # Install
 
 	$ docker pull mamemomonga/ihabunek-toot
