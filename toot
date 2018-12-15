@@ -1,0 +1,12 @@
+#!/bin/bash
+set -eu
+IMAGENAME="mamemomonga/ihabunek-toot"
+
+mkdir -p $HOME/.config
+
+FLAGT=
+if [ -t 0 ]; then
+	FLAGT=-t
+fi
+
+exec docker run -i $FLAGT --rm -e HUID=$(id -u) -v $HOME/.config:/home/app/.config $IMAGENAME $@
